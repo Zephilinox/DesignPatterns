@@ -5,6 +5,7 @@ class Duck
 {
 public:
     Duck();
+    virtual ~Duck() = default;
 
     virtual void quack(); //Virtual - derived classes can implement their own version
     virtual void swim();
