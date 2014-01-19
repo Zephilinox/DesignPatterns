@@ -11,3 +11,10 @@
 *.lai
 *.la
 *.a
+
+# Code::Blocks
+bin/*
+obj/*
+*.layout
+*.depend
+gmon.out #Profiling
