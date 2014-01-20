@@ -7,6 +7,9 @@
 #include "RedheadDuck.hpp"
 #include "RubberDuck.hpp"
 
+#include "FlyBehaviour.hpp"
+#include "FlyWithWings.hpp"
+
 //Identify the aspects of your application that vary and separate them from what stays the same
 
 /*
@@ -38,6 +41,13 @@ int main()
     rd.swim();
     rd.fly(); //Unintentional - RubberDucks should not be able to fly
     rd.display();
+
+    std::cout << "\n";
+
+    FlyWithWings fww;
+    FlyBehaviour fb = fww;
+    fww.fly();
+    fb.fly();
 
     return 0;
 }
