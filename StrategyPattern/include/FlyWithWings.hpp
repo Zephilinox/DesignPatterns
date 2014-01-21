@@ -9,7 +9,6 @@ class FlyWithWings : public FlyBehaviour
 public:
     FlyWithWings();
     virtual void fly();
-private:
 };
 
 #endif //FLYWITHWINGS_HPP

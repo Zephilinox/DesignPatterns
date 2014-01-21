@@ -13,8 +13,7 @@
 *.a
 
 # Code::Blocks
-bin/*
-obj/*
+bin/
 *.layout
 *.depend
 gmon.out #Profiling

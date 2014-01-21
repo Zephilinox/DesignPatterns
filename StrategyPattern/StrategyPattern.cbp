@@ -35,11 +35,15 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="include/Duck.hpp" />
+		<Unit filename="include/FlyBehaviour.hpp" />
+		<Unit filename="include/FlyWithWings.hpp" />
 		<Unit filename="include/MallardDuck.hpp" />
 		<Unit filename="include/RedheadDuck.hpp" />
 		<Unit filename="include/RubberDuck.hpp" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Duck.cpp" />
+		<Unit filename="src/FlyBehaviour.cpp" />
+		<Unit filename="src/FlyWithWings.cpp" />
 		<Unit filename="src/MallardDuck.cpp" />
 		<Unit filename="src/RedheadDuck.cpp" />
 		<Unit filename="src/RubberDuck.cpp" />

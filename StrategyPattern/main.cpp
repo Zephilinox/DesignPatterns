@@ -1,5 +1,6 @@
 //STD
 #include <iostream>
+#include <vector>
 
 //SELF
 #include "Duck.hpp"
@@ -9,6 +10,7 @@
 
 #include "FlyBehaviour.hpp"
 #include "FlyWithWings.hpp"
+#include "FlyForbidden.hpp"
 
 //Identify the aspects of your application that vary and separate them from what stays the same
 
@@ -20,7 +22,7 @@ Strategy lets the algorithm vary independently from clients that use it
 int main()
 {
     //Duck d; //Compiler error - Duck::display() is a Pure Virtual function
-    MallardDuck md;
+    /*MallardDuck md;
     md.quack();
     md.swim();
     md.fly();
@@ -42,12 +44,19 @@ int main()
     rd.fly(); //Unintentional - RubberDucks should not be able to fly
     rd.display();
 
-    std::cout << "\n";
+    std::cout << "\n";*/
 
-    FlyWithWings fww;
-    FlyBehaviour fb = fww;
-    fww.fly();
-    fb.fly();
+
+    std::vector<FlyBehaviour*> fb;
+    fb.push_back(new FlyWithWings());
+    fb.push_back(new FlyForbidden());
+    fb[0]->fly();
+    fb[1]->fly();
+
+    for (std::vector<FlyBehaviour*>::iterator it = fb.begin(); it != fb.end(); ++it)
+    {
+        delete *it;
+    }
 
     return 0;
 }
