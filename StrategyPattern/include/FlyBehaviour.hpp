@@ -1,8 +1,6 @@
 #ifndef FLYBEHAVIOUR_HPP
 #define FLYBEHAVIOUR_HPP
 
-#include <iostream>
-
 class FlyBehaviour
 {
 public:

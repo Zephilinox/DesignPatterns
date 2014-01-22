@@ -2,9 +2,14 @@
 
 //STD
 #include <iostream>
+#include <memory>
+
+//SELF
+#include "MuteQuack.hpp"
 
 MallardDuck::MallardDuck()
 {
+    m_QB = std::unique_ptr<MuteQuack> (new MuteQuack);
     std::cout << "MallardDuck constructed\n";
 }
 

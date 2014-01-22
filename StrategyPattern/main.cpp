@@ -21,41 +21,20 @@ Strategy lets the algorithm vary independently from clients that use it
 
 int main()
 {
-    //Duck d; //Compiler error - Duck::display() is a Pure Virtual function
-    /*MallardDuck md;
-    md.quack();
-    md.swim();
-    md.fly();
-    md.display();
+    std::vector<std::unique_ptr<Duck>> Ducks;
+    Ducks.push_back(std::unique_ptr<MallardDuck> (new MallardDuck));
+    Ducks.push_back(std::unique_ptr<RedheadDuck> (new RedheadDuck));
+    Ducks.push_back(std::unique_ptr<RubberDuck> (new RubberDuck));
 
     std::cout << "\n";
 
-    RedheadDuck rhd;
-    rhd.quack();
-    rhd.swim();
-    rhd.fly();
-    rhd.display();
-
-    std::cout << "\n";
-
-    RubberDuck rd;
-    rd.quack();
-    rd.swim();
-    rd.fly(); //Unintentional - RubberDucks should not be able to fly
-    rd.display();
-
-    std::cout << "\n";*/
-
-
-    std::vector<FlyBehaviour*> fb;
-    fb.push_back(new FlyWithWings());
-    fb.push_back(new FlyForbidden());
-    fb[0]->fly();
-    fb[1]->fly();
-
-    for (std::vector<FlyBehaviour*>::iterator it = fb.begin(); it != fb.end(); ++it)
+    for (std::vector<std::unique_ptr<Duck>>::iterator it = Ducks.begin(); it != Ducks.end(); ++it)
     {
-        delete *it;
+        (*it)->quack();
+        (*it)->swim();
+        (*it)->fly();
+        (*it)->display();
+        std::cout << "\n";
     }
 
     return 0;

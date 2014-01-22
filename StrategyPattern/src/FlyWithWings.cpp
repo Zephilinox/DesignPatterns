@@ -5,7 +5,6 @@
 
 FlyWithWings::FlyWithWings()
 {
-    std::cout << "FlyWithWings Behaviour constructed\n";
 }
 
 void FlyWithWings::fly()

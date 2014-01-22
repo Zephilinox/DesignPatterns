@@ -8,7 +8,6 @@ class RubberDuck : public Duck
 {
 public:
     RubberDuck();
-    virtual void quack();
     virtual void display();
 };
 

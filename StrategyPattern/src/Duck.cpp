@@ -3,14 +3,21 @@
 //STD
 #include <iostream>
 
+//SELF
+#include "FlyWithWings.hpp"
+#include "Quack.hpp"
+
 Duck::Duck()
 {
+    m_FB = std::unique_ptr<FlyWithWings>(new FlyWithWings());
+    m_QB = std::unique_ptr<Quack>(new Quack());
+
     std::cout << "Duck constructed\n";
 }
 
 void Duck::quack()
 {
-    std::cout << "Duck quacked\n";
+    m_QB->quack();
 }
 
 void Duck::swim()
@@ -20,5 +27,5 @@ void Duck::swim()
 
 void Duck::fly()
 {
-    std::cout << "Duck flew\n";
+    m_FB->fly();
 }
