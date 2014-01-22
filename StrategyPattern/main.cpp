@@ -7,10 +7,7 @@
 #include "MallardDuck.hpp"
 #include "RedheadDuck.hpp"
 #include "RubberDuck.hpp"
-
-#include "FlyBehaviour.hpp"
-#include "FlyWithWings.hpp"
-#include "FlyForbidden.hpp"
+#include "ModelDuck.hpp"
 
 //Identify the aspects of your application that vary and separate them from what stays the same
 
@@ -25,6 +22,7 @@ int main()
     Ducks.push_back(std::unique_ptr<MallardDuck> (new MallardDuck));
     Ducks.push_back(std::unique_ptr<RedheadDuck> (new RedheadDuck));
     Ducks.push_back(std::unique_ptr<RubberDuck> (new RubberDuck));
+    Ducks.push_back(std::unique_ptr<ModelDuck> (new ModelDuck));
 
     std::cout << "\n";
 

@@ -36,17 +36,31 @@
 		</Compiler>
 		<Unit filename="include/Duck.hpp" />
 		<Unit filename="include/FlyBehaviour.hpp" />
+		<Unit filename="include/FlyForbidden.hpp" />
+		<Unit filename="include/FlyRocketPowered.hpp" />
 		<Unit filename="include/FlyWithWings.hpp" />
 		<Unit filename="include/MallardDuck.hpp" />
+		<Unit filename="include/ModelDuck.hpp" />
+		<Unit filename="include/MuteQuack.hpp" />
+		<Unit filename="include/Quack.hpp" />
+		<Unit filename="include/QuackBehaviour.hpp" />
 		<Unit filename="include/RedheadDuck.hpp" />
 		<Unit filename="include/RubberDuck.hpp" />
+		<Unit filename="include/Squeak.hpp" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Duck.cpp" />
 		<Unit filename="src/FlyBehaviour.cpp" />
+		<Unit filename="src/FlyForbidden.cpp" />
+		<Unit filename="src/FlyRocketPowered.cpp" />
 		<Unit filename="src/FlyWithWings.cpp" />
 		<Unit filename="src/MallardDuck.cpp" />
+		<Unit filename="src/ModelDuck.cpp" />
+		<Unit filename="src/MuteQuack.cpp" />
+		<Unit filename="src/Quack.cpp" />
+		<Unit filename="src/QuackBehaviour.cpp" />
 		<Unit filename="src/RedheadDuck.cpp" />
 		<Unit filename="src/RubberDuck.cpp" />
+		<Unit filename="src/Squeak.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
