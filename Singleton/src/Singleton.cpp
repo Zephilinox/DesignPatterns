@@ -16,7 +16,7 @@ Singleton* Singleton::getInstance()
 {
     if (m_Instance != nullptr)
     {
-        count++;
+        //count++;
         return m_Instance;
     }
 
