@@ -1,7 +1,6 @@
 #include "Singleton.hpp"
 
 Singleton* Singleton::m_Instance;
-int Singleton::count = 0;
 
 Singleton::Singleton()
 {
@@ -16,7 +15,6 @@ Singleton* Singleton::getInstance()
 {
     if (m_Instance != nullptr)
     {
-        //count++;
         return m_Instance;
     }
 

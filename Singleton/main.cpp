@@ -6,11 +6,7 @@
 
 int main()
 {
-    for (int i = 0; i < 10; ++i)
-    {
-        Singleton* s = Singleton::getInstance();
-        std::cout << s->count << "\n";
-    }
+    Singleton* s = Singleton::getInstance();
 
     return 0;
 }
